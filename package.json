@@ -1,0 +1,13 @@
+{
+  "name": "js-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build/build.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "uglify-es": "^3.3.9",
+    "uglify-js": "^3.7.4"
+  }
+}

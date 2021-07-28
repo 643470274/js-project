@@ -1,0 +1,50 @@
+/*常用居中样式*/
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.h-left{
+    display: flex;
+    justify-content: flex-start;
+}
+.h-center{
+    display: flex;
+    justify-content: center;
+}
+.v-center{
+    display: flex;
+    align-items: center;
+}
+.v-center-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.v-center-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*页面样式*/
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#start{
+    font-weight: bold;
+    color: #727272;
+    font-size: larger;
+}
