@@ -8,5 +8,5 @@ jsPack({
     // 主JS
     mainJs: ['index.js'],
     // 额外需打包到主JS的库js
-    extraJs: ['md5.min.js']
+    extraJs: ['md5.min.js', 'extra.js']
 })

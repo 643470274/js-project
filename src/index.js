@@ -2,5 +2,5 @@
  * @constructor
  */
 function Index() {
-    return 'Hello Js-Project'
+    return 'Hello Js-Project ' + Extra()
 }
