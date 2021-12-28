@@ -105,12 +105,12 @@ function JsPack(config) {
             }
         }
         for (let i = 0; i < srcFiles.length; i++) {
-            if (extraJs.indexOf(srcFiles[i]) < 0) {
+            if (extraJs.indexOf(srcFiles[i]) < 0 && mainJs.indexOf(srcFiles[i]) >= 0) {
                 let fileName = srcFiles[i].match(/(\S+)(\.\S+)$/)[1] // 获得文件名
 
                 let oldPath = srcFolder + '/' + srcFiles[i]// 原路径
 
-                const code = (mainJs.indexOf(srcFiles[i]) >= 0 ? extraCode : '') + fs.readFileSync(oldPath, 'utf-8')
+                const code = extraCode + fs.readFileSync(oldPath, 'utf-8')
                 generateDistJs(fileName, code)
             }
         }
